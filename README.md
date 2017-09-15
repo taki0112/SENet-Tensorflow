@@ -14,26 +14,28 @@ If you want to see the ***original author's code***, please refer to this [link]
 * Python 3.x
 * tflearn (If you are easy to use ***global average pooling***, you should install ***tflearn***)
 
-## What is the "SE block" ?
+## Issue
+### What is the "SE block" ?
 ![senet](./assests/senet_block.JPG)
 
-## How apply ? (Inception, Residual)
+### How apply ? (Inception, Residual)
 <div align="center">
    <img src="https://github.com/hujie-frank/SENet/blob/master/figures/SE-Inception-module.jpg" width="420">
   <img src="https://github.com/hujie-frank/SENet/blob/master/figures/SE-ResNet-module.jpg"  width="420">
 </div>
 
-## How "Reduction ratio" should I set?
+### How "Reduction ratio" should I set?
 ![reduction](./assests/reduction_ratio.JPG)
 * **original** refers to ***ResNet-50***
 
-## Benefits against Network Depth
+## Results
+### Benefits against Network Depth
 ![depth](./assests/benefit_depth.JPG)
 
-## Incorporation with Modern Architecture
+### Incorporation with Modern Architecture
 ![incorporation](./assests/result2.JPG)
 
-## Comparison with State-of-the-art
+### Comparison with State-of-the-art
 ![compare](./assests/result.JPG)
 
 ## Related works
