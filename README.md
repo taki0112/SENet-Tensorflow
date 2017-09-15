@@ -64,8 +64,8 @@ def Squeeze_excitation_layer(self, input_x, out_dim, ratio, layer_name):
 Will be soon
 
 ## Related works
-* [Densenet](https://github.com/taki0112/Densenet-Tensorflow)
-* [ResNeXt](https://github.com/taki0112/ResNeXt-Tensorflow)
+* [Densenet-Tensorflow](https://github.com/taki0112/Densenet-Tensorflow)
+* [ResNeXt-Tensorflow](https://github.com/taki0112/ResNeXt-Tensorflow)
 
 ## Reference
 * [Inception_korean](https://norman3.github.io/papers/docs/google_inception.html)
