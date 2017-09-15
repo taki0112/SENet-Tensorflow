@@ -374,4 +374,4 @@ with tf.Session() as sess:
         with open('logs.txt', 'a') as f:
             f.write(line)
 
-        saver.save(sess=sess, save_path='./model/ResNeXt.ckpt')
+        saver.save(sess=sess, save_path='./model/Inception_resnet_v2.ckpt')
