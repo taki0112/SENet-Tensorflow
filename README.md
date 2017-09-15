@@ -25,18 +25,18 @@ If you want to see the ***original author's code***, please refer to this [link]
 </div>
 
 ### How *"Reduction ratio"* should I set?
-![reduction](./assests/reduction_ratio.JPG)
+![reduction](./assests/ratio.JPG)
 * **original** refers to ***ResNet-50***
 
 ## Results
 ### Benefits against Network Depth
-![depth](./assests/benefit_depth.JPG)
+![depth](./assests/benefit.JPG)
 
 ### Incorporation with Modern Architecture
-![incorporation](./assests/result2.JPG)
+![incorporation](./assests/incorporation.JPG)
 
 ### Comparison with State-of-the-art
-![compare](./assests/result.JPG)
+![compare](./assests/state_of_art.JPG)
 
 ## Related works
 * [Densenet](https://github.com/taki0112/Densenet-Tensorflow)
