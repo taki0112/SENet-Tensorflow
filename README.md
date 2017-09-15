@@ -1,5 +1,5 @@
 # SENet-Tensorflow
-Simple Tensorflow implementation of ***![Squeeze Excitation Networks](https://arxiv.org/abs/1709.01507)*** using **Cifar10** 
+Simple Tensorflow implementation of ![Squeeze Excitation Networks](https://arxiv.org/abs/1709.01507) using **Cifar10** 
 
 I implemented the following SENet
 * ![ResNeXt](https://arxiv.org/abs/1611.05431)
