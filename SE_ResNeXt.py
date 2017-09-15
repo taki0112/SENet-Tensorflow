@@ -97,10 +97,10 @@ def Evaluate(sess):
 
     return test_acc, test_loss, summary
 
-class ResNeXt():
+class SE_ResNeXt():
     def __init__(self, x, training):
         self.training = training
-        self.model = self.Build_ResNext(x)
+        self.model = self.Build_SEnet(x)
 
     def first_layer(self, x, scope):
         with tf.name_scope(scope) :
@@ -184,7 +184,7 @@ class ResNeXt():
         return x
 
 
-    def Build_ResNext(self, input_x):
+    def Build_SEnet(self, input_x):
         # only cifar10 architecture
 
         input_x = self.first_layer(input_x, scope='first_layer')
@@ -213,7 +213,7 @@ training_flag = tf.placeholder(tf.bool)
 
 learning_rate = tf.placeholder(tf.float32, name='learning_rate')
 
-logits = ResNeXt(x, training=training_flag).model
+logits = SE_ResNeXt(x, training=training_flag).model
 cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=label, logits=logits))
 
 l2_loss = tf.add_n([tf.nn.l2_loss(var) for var in tf.trainable_variables()])
