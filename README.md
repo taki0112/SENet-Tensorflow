@@ -1,11 +1,13 @@
 # SENet-Tensorflow
-Simple Tensorflow implementation of Squeeze Excitation Networks using Cifar10 (ResNeXt, Inception-v4, Inception-resnet-v2)
+Simple Tensorflow implementation of ***![Squeeze Excitation Networks](https://arxiv.org/abs/1709.01507)*** using **Cifar10** 
+
+I implemented the following SENet
+* ![ResNeXt](https://arxiv.org/abs/1611.05431)
+* ![Inception-v4, Inception-resnet-v2](https://arxiv.org/abs/1602.07261)
 
 If you want to see the ***original author's code***, please refer to this [link](https://github.com/hujie-frank/SENet)
 
-* [SENet paper](https://arxiv.org/abs/1709.01507)
-* [ResNeXt_paper](https://arxiv.org/abs/1611.05431)
-* [Inception-v4_paper](https://arxiv.org/abs/1602.07261)
+
 
 ## Requirements
 * Tensorflow 1.x
