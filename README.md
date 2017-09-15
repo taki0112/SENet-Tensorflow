@@ -50,7 +50,7 @@ def Squeeze_excitation_layer(self, input_x, out_dim, ratio, layer_name):
 ![reduction](./assests/ratio.JPG)
 * **original** refers to ***ResNet-50***
 
-## Results
+## ImageNet Results
 ### Benefits against Network Depth
 ![depth](./assests/benefit.JPG)
 
