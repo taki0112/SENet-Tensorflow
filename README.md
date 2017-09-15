@@ -17,7 +17,7 @@ If you want to see the ***original author's code***, please refer to this [link]
 ## Issue
 ### Image_size
 * In paper, experimented with *ImageNet*
-* However, due to **image size** issues in ***Inception network***, so I used ***zero padding*** for the original image
+* However, due to **image size** issues in ***Inception network***, so I used ***zero padding*** for the Cifar10
 ```python
 input_x = tf.pad(input_x, [[0, 0], [32, 32], [32, 32], [0, 0]]) # size 32x32 -> 96x96
 ```
