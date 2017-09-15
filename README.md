@@ -24,7 +24,7 @@ If you want to see the ***original author's code***, please refer to this [link]
   <img src="https://github.com/hujie-frank/SENet/blob/master/figures/SE-ResNet-module.jpg"  width="420">
 </div>
 
-### How "Reduction ratio" should I set?
+### How *"Reduction ratio"* should I set?
 ![reduction](./assests/reduction_ratio.JPG)
 * **original** refers to ***ResNet-50***
 
