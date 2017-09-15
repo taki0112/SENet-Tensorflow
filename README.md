@@ -60,6 +60,9 @@ def Squeeze_excitation_layer(self, input_x, out_dim, ratio, layer_name):
 ### Comparison with State-of-the-art
 ![compare](./assests/state_of_art.JPG)
 
+## Cifar10 Results
+Will be soon
+
 ## Related works
 * [Densenet](https://github.com/taki0112/Densenet-Tensorflow)
 * [ResNeXt](https://github.com/taki0112/ResNeXt-Tensorflow)
