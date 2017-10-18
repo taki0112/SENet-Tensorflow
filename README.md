@@ -21,6 +21,14 @@ If you want to see the ***original author's code***, please refer to this [link]
 ```python
 input_x = tf.pad(input_x, [[0, 0], [32, 32], [32, 32], [0, 0]]) # size 32x32 -> 96x96
 ```
+### NOT ENOUGH GPU Memory
+* If not enough GPU memory, Please edit the code
+```python
+with tf.Session() as sess : NO
+with tf.Session(config=tf.ConfigProto(allow_soft_placement=True)) as sess : OK
+```
+
+## Idea
 ### What is the "SE block" ?
 ![senet](./assests/senet_block.JPG)
 ```python
