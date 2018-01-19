@@ -181,7 +181,7 @@ class SE_ResNeXt():
 
             input_x = Relu(x + pad_input_x)
 
-        return x
+        return input_x
 
 
     def Build_SEnet(self, input_x):
