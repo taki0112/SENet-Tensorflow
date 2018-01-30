@@ -262,14 +262,18 @@ class SE_Inception_resnet_v2():
 
         for i in range(5) :
             x = self.Inception_resnet_A(x, scope='Inception_A'+str(i))
+            channel = int(np.shape(x)[-1])
+            x = self.Squeeze_excitation_layer(x, out_dim=channel, ratio=reduction_ratio, layer_name='SE_A'+str(i))
 
         x = self.Reduction_A(x, scope='Reduction_A')
-        
+   
         channel = int(np.shape(x)[-1])
         x = self.Squeeze_excitation_layer(x, out_dim=channel, ratio=reduction_ratio, layer_name='SE_A')
 
         for i in range(10)  :
             x = self.Inception_resnet_B(x, scope='Inception_B'+str(i))
+            channel = int(np.shape(x)[-1])
+            x = self.Squeeze_excitation_layer(x, out_dim=channel, ratio=reduction_ratio, layer_name='SE_B'+str(i))
 
         x = self.Reduction_B(x, scope='Reduction_B')
         
@@ -278,10 +282,12 @@ class SE_Inception_resnet_v2():
 
         for i in range(5) :
             x = self.Inception_resnet_C(x, scope='Inception_C'+str(i))
+            channel = int(np.shape(x)[-1])
+            x = self.Squeeze_excitation_layer(x, out_dim=channel, ratio=reduction_ratio, layer_name='SE_C'+str(i))
          
             
-        channel = int(np.shape(x)[-1])
-        x = self.Squeeze_excitation_layer(x, out_dim=channel, ratio=reduction_ratio, layer_name='SE_C')
+        # channel = int(np.shape(x)[-1])
+        # x = self.Squeeze_excitation_layer(x, out_dim=channel, ratio=reduction_ratio, layer_name='SE_C')
         
         x = Global_Average_Pooling(x)
         x = Dropout(x, rate=0.2, training=self.training)
