@@ -74,6 +74,7 @@ Will be soon
 ## Related works
 * [Densenet-Tensorflow](https://github.com/taki0112/Densenet-Tensorflow)
 * [ResNeXt-Tensorflow](https://github.com/taki0112/ResNeXt-Tensorflow)
+* [ResNet-Tensorflow](https://github.com/taki0112/ResNet-Tensorflow)
 
 ## Reference
 * [Inception_korean](https://norman3.github.io/papers/docs/google_inception.html)
